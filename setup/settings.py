@@ -126,7 +126,8 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+# Media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # busca a pasta media na raiz do projeto
+MEDIA_URL = '/media/' # url base para acessar os arquivos de mídia
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
